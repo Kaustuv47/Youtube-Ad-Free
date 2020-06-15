@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube",
+  "description": "Enables Youtube without Ads",
+  "version": "1.0",
+  "content_scripts": [{
+    "run_at": "document_start",
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["script.js"]
+  }]
+}
